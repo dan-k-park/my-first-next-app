@@ -10,7 +10,7 @@ const port = 3000
 nextApp.prepare().then(() => {
     const app = express()
 
-    app.get('/my-custom-route', (req, res) => res.status(200).json({ hello: 'Hello from the back end' }))
+    app.get('/my-custom-route', (req, res) => res.status(200).json({ hello: 'Hello from the updated back ends' }))
 
     app.get('*', (req, res) => {
         return handle(req, res)
